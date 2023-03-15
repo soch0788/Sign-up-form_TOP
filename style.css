@@ -1,0 +1,72 @@
+.left{
+    /* background-image: url("./Background.jpg"); */
+    /* width: 35vw; */
+}
+
+@font-face { font-family: Norse-Bold; 
+    src: url('Norse-Bold.otf'); } 
+
+#background{
+    position: relative;
+    z-index: -1;
+    width: auto;
+    height: 100%;
+}
+
+.odin-image{
+    position: relative;
+    top: -50%;
+    background-color: rgba(50,50,50,.5);
+    width: 100%;
+    color: white;
+    font-family:  Norse-Bold;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.odin-image > img {
+    height: 10vh;
+    width: auto;
+}
+
+body {
+    display: flex;
+    gap: 1rem;
+    height: 80vh;
+    background-color: lightgray;
+}
+
+.right {
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    
+}
+
+.formHeader{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+input,label{
+    display:flex;
+    flex-direction: column;
+}
+
+button {
+    border-radius: 5%;
+
+}
+
+
