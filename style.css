@@ -2,7 +2,7 @@
     background-image: url("./Background.jpg");
     width: max(300px, 40vw);
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
     z-index: -1;
     background-size: cover;
     flex: 0 0 auto;
@@ -35,7 +35,7 @@
 body {
     display: flex;
     gap: 0 1rem;
-    height: 80vh;
+    /* height: 80vh; */
     background-color: rgb(230,230,230);
     padding: 0;
     margin: 0;
@@ -45,21 +45,25 @@ body {
 .right {
     display:flex;
     flex-direction: column;
-    gap: 5px;
-    justify-content: flex-start;
-    padding: max(5rem, 5px) 3rem 0 3rem;
-    font-size: 28px;
+    /* gap: 6px; */
+    margin: auto 0;
+    padding: 0 2rem;
+    font-size: 24px;
+    /* border: red solid; */
 }
 
-
+.right>p {
+    font-size: 16px;
+}
 form {
     /* border: darkgray solid; */
     background-color:rgb(227,227,227);
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-size: 24px;
-    gap: 2rem 5px;
-    padding: 1rem;
+    gap: min(5px, 1vw);
+    height: auto;
+    /* padding: 1rem; */
 }
 
 
@@ -69,7 +73,7 @@ form {
 }
 
 input{
-    height: 3vh;
+    height: max(10px, 3vh);
     width: max(250px, 15vw);
 }
 
@@ -82,10 +86,9 @@ button {
     border-radius: 5%;
     background-color: #596D48;
     color: white;
-    height: 5vh;
     font-size: 24px;
     width: max(250px, 15vw);
-
+    height: auto;
 }
 
 input:valid {
